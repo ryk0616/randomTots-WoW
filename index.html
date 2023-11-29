@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Tots ni Zam</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+ 
+</head>
+<body >
+    <br>
+  <h1 class="text-center" style="color: #1F51FF; padding:5px;">  TOTS / <span style="color:aqua">WOW </span></h1>
+  <h5 class="text-center" style="color: #1F51FF; ;">thoughts<span style="color:aqua">&nbsp;&nbsp;/ &nbsp;words of wisdom </span</h5>
+  <p class="text-center p-2" style="color: #191970; ;">by pilosopong injinir</p>
+
+    
+    <div class="container">
+        <div id="quote-box">
+            <div id="text">
+                <p style="font-family: 'Roboto', sans-serif; color: black"></p>
+            </div>
+            <div id="author">
+                <p>-</p>
+            </div>
+            <button id="new-quote" class="btn btn-primary">New Quote</button>
+            <a id="tweet-quote" class="btn btn-info" href="#" target="_blank">Tweet Quote</a>
+        </div>
+    </div>
+    <div class="container">
+        <img src="zamii.jpg.png" alt="My Profile Image" height="180" >
+        <h1 style="color:black">Zam Campiao</h1>
+        <h2 style="color:black" >Philosopher</h2>
+        <p style="color:red; text-align: justify;font-family: 'Roboto', sans-serif;"  >i'm Zam Campiao, and i really love reading and listening to stories. it feels like each book or person is a door to a new world, and i get to open it with my imagination. also, i'm always curious and interested in learning about different things. i mean, i like to explore a lot of different topics in life and everything. it could be anything from science and math to art or history. i find all these things fascinating and love to learn more about them.</p>
+
+
+        <hr>
+        </div>
+        <h5 style="color:#1495d1"> here's my short insights about You ! yes You are! </h5>
+
+        
+        <h6 style="text-align: justify; padding-left: 20px; padding-right: 20px; color: black;"  >
+            in the busy life of existence, see me as an everyday person exploring the complexities of life. i wear the mask of a "simpleton," not to fake it but as a conscious choice to move through the world with caution and reserve.
+        </h6>
+        <h6 style="text-align:justify; padding-left: 20px; padding-right: 20px; color: black;"  >
+            why, you ask? well, it's a way of protecting myself, a conscious decision to avoid unnecessary conflicts while quietly observing the ups and downs of human and nature. despite how it may seem, i possess a sharp awareness, a keen sensitivity to the details that make life a masterpiece.
+        </h6>
+        <h6 style="text-align: justify; padding-left: 20px; padding-right: 20px; color: black;"  >
+            my genuine passion lies in the field of "philosophy of art." i am fascinated by the cleverness of human-made creations, finding beauty in the structure of existence. the harmony of life, with its detailed notes played by the hands of humanity, captivates my soul.
+        </h6>
+        <h6 style="text-align: justify; padding-left: 20px; padding-right: 20px; color: black;"  > 
+            now, imagine a situation where societal judgments rain down upon you, where appreciation is rare, and belief in your abilities is scarce. in contrast, i am the listener, the open-hearted philosopher. despite society's indifference, my ears remain open.
+        </h6>
+        <h6 style="text-align: justify; padding-left: 20px; padding-right: 20px; color: black;"  > 
+            in this story, think about a person confessing to deeds that are hard to understand—a tale tangles with the dark threads of a troubled human soul. instead of condemning, i offer understanding. my hand reaches out not to justify actions but to explore the twisted paths that led to such darkness.
+            
+        </h6>
+        <h6 style="text-align: justify; padding-left: 20px; padding-right: 20px; color: black;"  >
+            in a world quick to judge, my well of gratitude, acceptance, and patience is a human-made lake, carefully shaped through experiences and reflections. life unfolds before me, a collage of human choices and consequences, and i stand as a witness with a heart unburdened by prejudice.
+        </h6>
+        <hr>
+
+        <p style="text-align: justify; color: red ;padding-left: 40px; padding-right: 40px; ">if you ever need someone to talk to or just want someone to listen without judgment or offer advice, feel free to reach out. wishing you well! stay strong, and God bless!</p> 
+        <p style="color:#1495d1">here's my link: <a href="https://www.facebook.com/pilosopong.injinir/" target="_blank">Facebook Account</a></p>
+        
+    <script>
+        const quotes = [
+            {
+                text: "isang araw, mare-realize mo na tama ang decision mo.",
+               // author: " Injinir Z"
+            },
+            {
+                text: "if you are capable to do so do it.",
+               // author: "Injinir Z"
+            },
+          {
+                text: "smile, it's contagious.",
+                //author: "Injinir Z"
+            },
+            {
+                text: "love is sacrifice.",
+                //author: "Injinir Z"
+            }
+          ,
+            {
+                text: "love is giving.",
+                //author: "Injinir Z"
+            },
+          {
+                text: "sa likod ng mga ngiti, may laging mabigat na dinadala.",
+                //author: "Injinir Z"
+            },
+            {
+                text: "believe in yourself, always.",
+                //author: "Injinir Z"
+            },
+            {
+                text: "you don't need external validation.",
+                //author: "Injinir Z"
+            }
+          ,
+            {
+                text: "enjoy the process.",
+               // author: "Injinir Z"
+            },
+          {
+                text: "chase excellence not perfection.",
+               // author: "Injinir Z"
+            },
+            {
+                text: "embrace your flaws.",
+               // author: "Injinir Z"
+            },
+            {
+                text: "if you are capable to do so do it.",
+               // author: "Injinir Z"
+            },
+          {
+                text: "hindi sa lahat ng oras nasa atin ang oras.",
+               // author: "Injinir Z"
+            },
+            {
+                text: "hindi dahil meron ako, kundi dahil kaya ko",
+               // author: "Injinir Z"
+            }
+          ,
+            {
+                text: "and no one stay. just you and you only.",
+                //author: "Injinir Z"
+            },
+          {
+                text: "let me be your mystery.",
+                //author: "Injinir Z"
+            },
+            {
+                text: "hindi sa lahat ng oras nasa atin ang oras.",
+               // author: "Injinir Z"
+            },
+            {
+                text: "just chill okay? don't overthink",
+               // author: "Injinir Z"
+            }
+          ,
+            {
+                text: "be yourself with justice.",
+                //author: "Injinir Z"
+            },
+          {
+                text: "umaapaw pa rin ang kagandahang tinatangi ng tao.",
+               // author: "Injinir Z"
+            },
+            {
+                text: "happiness is a choice and not.",
+               // author: "Injinir Z"
+            },
+          {
+                text: "sa Kanya pa rin tayo uuwi.",
+               // author: "Injinir Z"
+            },
+            {
+                text: "sometimes go with the flow and you shouldn't.",
+                //author: "Injinir Z"
+            },
+          {
+                text: "rationalize things always.",
+               // author: "Injinir Z"
+            },
+            {
+                text: "pagtimbangin mo lang yang puso't isip mo.",
+               // author: "Injinir Z"
+            },
+          {
+                text: "you can't be them.",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: "she's the only variable to the social equation.",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: "she's the only variable to the social equation.",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: "i know, you have something to share, share your puzzled stories",
+               // author: "Injinir Z"
+            },
+            
+            {
+                text: "i'm here to heal you.",
+               // author: "Injinir Z"
+            },
+          
+            {
+                text: "i comprehend well but forget quickly.",
+               // author: "Injinir Z"
+            },
+            {
+                text: "whether we want it or not, it will never be. What has been decreed will be.",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: "it is harder to give up than giving in.",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: "it's really good when you expect something painful because when it happens, it's not as painful anymore.",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: "i hope you see me the same way i see myself .",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " life is too short, shorter than you expected if only we knew ",
+               // author: "Injinir Z"
+            },
+
+            
+            {
+                text: " ride your wave until the end. ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " don't be little yourself.",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " you're Blessed. trust me. ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " we must struggle to understand and recognize our strength, not only physically but also spiritually, mentally, and emotionally ",
+               // author: "Injinir Z"
+            },
+
+            
+            {
+                text: " sometimes our Flaws is our Strength ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " if you see people, life is unfair but if you see God, life is fair.",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " people come and go. don't depend on them. ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " ride your wave don't rely on others.",
+               // author: "Injinir Z"
+            },
+
+            
+            {
+                text: " the Truth does not speak for itself.",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " life is all about suffering; we must endure it to attain true happiness. ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " life is hard, but it becomes easier if you make it so.",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " ang daming choices sa utak ko. minsan naman wala talagang choice. ",
+               // author: "Injinir Z"
+            },
+
+            
+            {
+                text: " di sya pwedeng maging reason kung di sya valid",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " pride sya na walang kasamang pagiging arogante.",
+               // author: "Injinir Z"
+            },
+            {
+                text: " tapusin na natin ang mga bagay bagay na hindi na kailangan pang ituloy.",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " minsan kung kailan ka pa mag iingat doon ka pamapapahamak",
+               // author: "Injinir Z"
+            },
+
+            
+            {
+                text: " to discipline ourselves that leads to public victory. ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " we don't need to defend ourselves Kung alam din natin na di tayo mananalo.",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " sometime you should think twice before moving on.",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " life is fair, as we all face struggles",
+               // author: "Injinir Z"
+            },
+
+            
+            {
+                text: " people will hate you no matter what you do, so just keep going! let them 'kwak kwak kwak",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " sometimes, suffering is protection.",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " she's the only variable in the social equation.",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " let people see your weirdest, craziest, unmannered, irrational attitude and behavior on social media. let them think that you're a fool",
+               // author: "Injinir Z"
+            },
+
+            
+            {
+                text: " mukha na nga tayong basura pati kwarto natin, atleast yung utak hindi ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " silence is sometimes a teacher ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " sigurado akong di ako nagsasayang ng oras ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " i know you; i may not know the whole of you, but I know the core.",
+               // author: "Injinir Z"
+            },
+
+            
+            {
+                text: " kahit di mo na yan ma-aalala, pero mararamdaman mo pa rin ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " hindi ko nga maalala kung naligo ba ako kanina o wala, yung kwento mo pa kaya?, no time for chismis",
+               // author: "Injinir Z"
+            },
+            {
+                text: " akong mukhang basura, pero kailangan ng lahat ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " kung kailan ka masaya, may lungkot na susunod, be prepared",
+               // author: "Injinir Z"
+            },
+
+            
+            {
+                text: " she's thinking like hell ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " i really want to help because i know how it feels to not be helped ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " conquering your fear is always one of the best decisions you make ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " mas mahirap makisalamuha kaisa sa mag-aral ",
+               // author: "Injinir Z"
+            },
+
+            
+            {
+                text: " there's always a dark side to everyone's story ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " someone cares about you, they just may not be by your side, literally not on your side ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " i will not tolerate foolish acts. if mali ka, mali ka ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " manipulating myself into believing something that isn't true just to cope with something painful ",
+               // author: "Injinir Z"
+            },
+
+            
+            {
+                text: " they're not bad people; they just didn't fly to the places you choose to ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " why should we be proud of things we didn't work for? ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " hindi dahil meron ako, pero dahil kaya ko ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " never regret the love and care I gave ",
+               // author: "Injinir Z"
+            },
+
+            
+            {
+                text: " ocean of pain, staying again ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " let's cry and celebrate ",
+               // author: "Injinir Z"
+            },
+            {
+                text: " sometimes all we need is to speak with someone we don't know but who makes us feel at ease ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " stay for a while; i know that you will leave me soon",
+               // author: "Injinir Z"
+            },
+
+            
+            {
+                text: " ikaw ang nauna ngunit ako ang nagdurusa ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " oras lang hinihingi ko, hindi ikaw ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " ipagsabay mong gamitin yang puso't isip mo para hindi ka makasakit",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " laging gising sa gitna ng gabi",
+               // author: "Injinir Z"
+            },
+
+            
+            {
+                text: " it's not about giving time to heal; it's about giving time to accept.",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " nakangiti pa rin hanggang ngayon dahil sa nangyari sa akin kahapon ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " can't afford to lose you ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " being so smart and acting like a dumb ass ",
+               // author: "Injinir Z"
+            },
+
+            
+            {
+                text: " here comes a time when you don't know what to do, all you know is nothing ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " when you thought that you needed to do something but didn't know what to do because you didn't really know ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " all memories are still haunting ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " i see people with different disabilities ",
+               // author: "Injinir Z"
+            },
+
+            
+            {
+                text: " because of forgetfulness, i feel empty ",
+               // author: "Injinir Z"
+            },
+
+            {
+                text: " you're a player in your own game. be mindful and enjoy ",
+               // author: "Injinir Z"
+            },
+            {
+                text: " nakakagaan sa pakiramdam ang pag-bahagi ng nararamdaman mo sa iba ",
+               // author: "Injinir Z"
+            },
+            {
+                text: " araw araw akong binabangungut ng mga ala-ala't salita ",
+               // author: "Injinir Z"
+            },
+            {
+                text: " i haven't moved on from the pain you brought me. it stays and becomes part of me ",
+               // author: "Injinir Z"
+            }, {
+                text: " found myself digging for a miracle ",
+               // author: "Injinir Z"
+            },
+            {
+                text: " sumabay sa akin ang mga patak ng ulan",
+               // author: "Injinir Z"
+            }, {
+                text: " we are not in the same boat and are not facing the same storm ",
+               // author: "Injinir Z"
+            },
+            {
+                text: " hindi ka pwedeng mag-sinungaling sa salamin",
+               // author: "Injinir Z"
+            }, {
+                text: " minsan, hindi mo kailangan ng sagot. kailangan mo lang matuto ",
+               // author: "Injinir Z"
+            },
+            {
+                text: " kasalanan bang hindi ka na maka-alala ? ",
+               // author: "Injinir Z"
+            },
+            {
+                text: " kung tatalikuran ka man ng mundo, haharap ako sayo ",
+               // author: "Injinir Z"
+            },
+            {
+                text: " sometimes, you don't need a clear motivation to start a move. Begin the journey, and find motivation in the process.",
+               // author: "Injinir Z"
+            },
+            {
+                text: " genuine heart always wins.",
+               // author: "Injinir Z"
+            },
+            // {
+            //     text: " ",
+            //    // author: "Injinir Z"
+            // },
+            // {
+            //     text: " ",
+            //    // author: "Injinir Z"
+            // },
+            // {
+            //     text: " ",
+            //    // author: "Injinir Z"
+            // },
+            // {
+            //     text: " ",
+            //    // author: "Injinir Z"
+            // },
+            // {
+            //     text: " ",
+            //    // author: "Injinir Z"
+            // },
+            // {
+            //     text: " ",
+            //    // author: "Injinir Z"
+            // },
+            // {
+            //     text: " ",
+            //    // author: "Injinir Z"
+            // },
+            
+
+            
+
+
+            
+          
+        ];
+
+        const textElement = document.getElementById("text").querySelector("p");
+        //const authorElement = document.getElementById("author").querySelector("p");
+        const newQuoteButton = document.getElementById("new-quote");
+        const tweetQuoteButton = document.getElementById("tweet-quote");
+
+        function getRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            return quotes[randomIndex];
+        }
+
+        function setNewQuote() {
+            const { text, author } = getRandomQuote();
+            textElement.textContent = text;
+            authorElement.textContent = ` ${author}`;
+            const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text + '  ' + author)}`;
+            tweetQuoteButton.setAttribute("href", tweetUrl);
+        }
+
+        newQuoteButton.addEventListener("click", setNewQuote);
+
+        // Initial setup
+        setNewQuote();
+
+       
+
+        
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
