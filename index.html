@@ -904,13 +904,18 @@
 
     const facebookShareButton = document.getElementById("facebook-share");
 
-    function shareOnFacebook() {
-    const { text, author } = getRandomQuote(); // Get the current quote and author
+ function shareOnFacebook()
+     {
+    const { text, author } = getRandomQuote(); // Get the current quote
     const quoteText = `${text} - ${author ? author : ''}`; // Combine text and author
-    
-    const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}&quote=${encodeURIComponent(quoteText)}`;
+
+    // Use a placeholder link since we don't want to share the webpage URL
+    const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=https://your-website-link.com&quote=${encodeURIComponent(quoteText)}`;
+
+    // Open the share dialog with the correct quote
     window.open(facebookShareUrl, "_blank", "width=600,height=400");
-}
+    }
+
 
 
         
